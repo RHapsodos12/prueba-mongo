@@ -1,0 +1,15 @@
+{
+  "name": "prueba-mongo",
+  "version": "1.0.0",
+  "description": "Prueba MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Santacruz",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^6.2.2",
+    "mongoose": "^5.7.11"
+  }
+}
