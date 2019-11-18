@@ -10,6 +10,7 @@ const ProductSchema = new Schema({
     precio: Number
 })
 
-const ProductoM = mongoose.model('producto', ProductSchema);
+//Args ('coleccion', 'Schema')
+const ProductoM = mongoose.model('product', ProductSchema);
 
 module.exports = ProductoM;
