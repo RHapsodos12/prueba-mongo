@@ -6,7 +6,7 @@ const Product = require('../models/productModel');
 //Describe la función del archivo
 describe('Guardar registros', function(){
 
-    it('Agrega un registro a la base de datos', function(){
+    it('Agrega un registro a la base de datos', function(done){
         
         var prod = new Product({
             name: 'Lavadora',
@@ -14,13 +14,10 @@ describe('Guardar registros', function(){
             modelo: 'LGE-123',
             precio: 6350
         });
-
         prod.save().then(function(){
-            assert(prod.isNew);
+            assert(!prod.isNew);
             done();
+            console.log('Registro guardado.');
         });
-
     });
-
-
 });
