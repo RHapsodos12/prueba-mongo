@@ -9,7 +9,7 @@
   "author": "David Santacruz",
   "license": "ISC",
   "dependencies": {
-    "mocha": "^6.2.2",
+    "mocha": "^10.2.0",
     "mongoose": "^5.7.11"
   }
 }
